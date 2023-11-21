@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baby Steps JavaScript</title>
+    <link rel="stylesheet" href="/config/styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
-<body>
-    <header>
-        <h1></h1>
+<body id="index">
+    <header id="index_header">
+        <h1>Baby Steps JavaScript</h1>
     </header>
-    <main>
+    <main id="index_content">
         <section class="exercises">
-            <button><a href="/src/pages/variables.html">Variables</a></button>
+            <button class="btn btn_slide_right"><a href="/src/pages/variables.html">Variables</a></button>
+            <button class="btn btn_slide_right"><a href="/src/pages/funtions.html">Funtions</a></button>
+            <button class="btn btn_slide_right"><a href="/src/pages/objects.html">Objects</a></button>
+            <button class="btn btn_slide_right"><a href="/src/pages/arrays.html">Arrays</a></button>
         </section>
+        <div>
+            <button id="btn_welcome" onclick="alert('Welcome to my first exercises in JavaScript :D!!');">
+                Welcome
+                <i class="fa fa-hand-peace" aria-hidden="true"></i>
+            </button> 
+        </div>
     </main>
 </body>
 </html>

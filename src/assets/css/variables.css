@@ -1,0 +1,7 @@
+@import url(/src/assets/css/global.css);
+
+/* background: linear-gradient(150deg,  var(--mustard),var(--dark-orange),var(--light-wine), var(--vino), var(--light-wine),var(--dark-orange)); */
+
+body{
+    background-color: aqua;
+}

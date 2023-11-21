@@ -1,0 +1,18 @@
+:root {
+    --wine: #5b0045;
+    --light-wine: #71115a;
+    --light-yellow:#fff07d;
+    --yellow: #f7df1e;
+    --dark-yellow:#ffe100;
+    --orange: orangered;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+

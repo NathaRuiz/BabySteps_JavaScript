@@ -24,7 +24,7 @@ function add_numbers(num1 , num2){
 
 function odd_even(num){
     const identify = document.getElementById("identify");
-    if(num%2==0){
+    if(num%2===0){
         
         identify.innerHTML = `The number ${num} is even`;
         return(`The number ${num} is even`);
