@@ -23,7 +23,9 @@ function variable_types() {
             <li> fruits_person2 = ${fruits_person2}</li>
         </ul>
         `;
-  console.log(`Variables used: ${num1}, ${num2}, ${person1}, ${person2}, ${fruits_person1}, ${fruits_person2}`);
+
+    return(`Variables used: ${num1}, ${num2}, ${person1}, ${person2}, ${fruits_person1}, ${fruits_person2}`);
+    
 }
 
 function operations(){
@@ -41,7 +43,7 @@ function operations(){
         <h3>Division</h3> 
         num1 / num2 = ${division}
         `;
-        console.log(`Sum: ${sum} , Subtraction: ${subtraction} , Multiplication: ${multiplication} , Division: ${division} `)
+        return(`Sum: ${sum} , Subtraction: ${subtraction} , Multiplication: ${multiplication} , Division: ${division} `)
 }
 
 function concatenate_string(){
@@ -59,10 +61,13 @@ function concatenate_string(){
     <li>${concatenate_type2}</li>
     </ul>
     `;
-    console.log(`Concatenate form 1: ${concatenate_type1}, form 2: ${concatenate_type2}`);
+    return(`Concatenate form 1: ${concatenate_type1}, form 2: ${concatenate_type2}`);
 }
 
 
 variable_types();
+console.log(variable_types());
 operations();
+console.log(operations());
 concatenate_string();
+console.log(concatenate_string());
