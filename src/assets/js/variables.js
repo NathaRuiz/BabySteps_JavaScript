@@ -47,8 +47,8 @@ function operations(){
 }
 
 function concatenate_string(){
-    let concatenate_type1 = `${person1} tiene ${num1} manzana/s`;
-    let concatenate_type2 = person2 + " tiene " + num2 + " manzana/s";
+    let concatenate_type1 = `${person1} has ${num1} aple/s`;
+    let concatenate_type2 = person2 + " has " + num2 + " aple/s";
     const strings = document.getElementById("strings");
     strings.innerHTML = ` <h3>Form 1: </h3> 
     Using using backticks and $ 
@@ -67,7 +67,9 @@ function concatenate_string(){
 
 variable_types();
 console.log(variable_types());
+
 operations();
 console.log(operations());
+
 concatenate_string();
 console.log(concatenate_string());
