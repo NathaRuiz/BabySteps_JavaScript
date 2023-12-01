@@ -1,2 +1,5 @@
 @import url(/src/assets/css/index.css);
 @import url(/src/assets/css/variables.css);
+@import url(/src/assets/css/functions.css);
+@import url(/src/assets/css/objects.css);
+@import url(/src/assets/css/arrays.css);

@@ -1,0 +1,6 @@
+@import url(/src/assets/css/global.css);
+
+#body_functions{
+    background-color: var(--functions-bg);
+}
+

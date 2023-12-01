@@ -4,12 +4,12 @@ function say_hi(person1, person2){
     let hello2 =  `Hello ${person2}`;
     const greeting = document.getElementById("greeting");
     greeting.innerHTML = ` <h3>Gretting 1: </h3>  
-    <ul>
-        <li>${hello1}</li>
+    <ul class="ul_class">
+        <li>- ${hello1}</li>
     </ul>
     <h3>Gretting 2: </h3> 
-    <ul>
-    <li>${hello2}</li>
+    <ul class="ul_class">
+    <li>- ${hello2}</li>
     </ul>
     `;
     return(`Greetings: ${hello1}, ${hello2}`);

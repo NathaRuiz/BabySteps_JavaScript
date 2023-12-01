@@ -1,9 +1,7 @@
 @import url(/src/assets/css/global.css);
 
-/* background: linear-gradient(150deg,  var(--mustard),var(--dark-orange),var(--light-wine), var(--vino), var(--light-wine),var(--dark-orange)); */
-
 #body_variables{
-    background: linear-gradient(150deg, var(--wine),var(--light-wine),var(--yellow),var(--light-yellow),var(--yellow), var(--wine),var(--light-wine)); ;
+    background: var(--variables-bg);
 }
 
 header{
@@ -12,22 +10,12 @@ header{
 header > h1{
     text-align: center;
 }
+.title{
+margin-bottom: 10px;
+}
+
 #main_variables{
     display: flex;
     justify-content: center;
 }
-.main_content{
-    width: 90%;
-    min-height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-}
 
-.main_content_section{
-    background-color: white;
-}
-
-#variables_used > ul > li{
-    margin-left: 5%;
-}

@@ -8,19 +8,19 @@ let fruits_person2 = false;
 function variable_types() {
   const variables_used = document.getElementById("variables_used");
   variables_used.innerHTML = `<h3>Number</h3> 
-        <ul>
-            <li>num1 = ${num1}</li>
-            <li>num2 = ${num2} </li>
+        <ul class="ul_class">
+            <li>- num1 = ${num1}</li>
+            <li>- num2 = ${num2} </li>
         </ul>
         <h3>String</h3>
-        <ul>
-            <li>person1 = ${person1} </li>
-            <li>person2 = ${person2}</li>
+        <ul class="ul_class">
+            <li>- person1 = ${person1} </li>
+            <li>- person2 = ${person2}</li>
         </ul> 
         <h3>Boolean</h3> 
-        <ul>
-            <li> fruits_person1 = ${fruits_person1}</li>
-            <li> fruits_person2 = ${fruits_person2}</li>
+        <ul class="ul_class">
+            <li>- fruits_person1 = ${fruits_person1}</li>
+            <li>- fruits_person2 = ${fruits_person2}</li>
         </ul>
         `;
 
@@ -51,14 +51,14 @@ function concatenate_string(){
     let concatenate_type2 = person2 + " has " + num2 + " aple/s";
     const strings = document.getElementById("strings");
     strings.innerHTML = ` <h3>Form 1: </h3> 
-    Using using backticks and $ 
-    <ul>
-        <li>${concatenate_type1}</li>
+    Using using backticks and $ :
+    <ul class="ul_class">
+        <li>- ${concatenate_type1}</li>
     </ul>
     <h3>Form 2: </h3> 
-    Using double quotes and +
-    <ul>
-    <li>${concatenate_type2}</li>
+    Using double quotes and + :
+    <ul class="ul_class">
+    <li>- ${concatenate_type2}</li>
     </ul>
     `;
     return(`Concatenate form 1: ${concatenate_type1}, form 2: ${concatenate_type2}`);
