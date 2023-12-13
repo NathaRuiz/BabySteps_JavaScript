@@ -4,7 +4,6 @@
     width:100%;
     height:100vh;
     background: linear-gradient(150deg, var(--dark-yellow), var(--yellow),var(--light-yellow) , var(--yellow),var(--dark-yellow) );
-    overflow: hidden;
 }
 
 #index_header{

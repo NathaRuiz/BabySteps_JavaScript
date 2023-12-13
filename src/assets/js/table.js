@@ -1,47 +1,3 @@
-let my_table = document.getElementById("my_table");
-let table = document.createElement("table");
-let thead = document.createElement("thead");
-let tbody = document.createElement("tbody");
-
-table.appendChild(thead);
-table.appendChild(tbody);
-
-let row_1 = document.createElement("tr");
-
-let heading_1 = document.createElement("th");
-row_1.appendChild(heading_1);
-heading_1.innerHTML = "ID";
-
-
-let heading_2 = document.createElement("th");
-row_1.appendChild(heading_2);
-heading_2.innerHTML = "NAME";
-
-
-let heading_3 = document.createElement("th");
-row_1.appendChild(heading_3);
-heading_3.innerHTML = "STATUS";
-
-
-let heading_4 = document.createElement("th");
-row_1.appendChild(heading_4);
-heading_4.innerHTML = "SPECIES";
-
-
-let heading_5 = document.createElement("th");
-row_1.appendChild(heading_5);
-heading_5.innerHTML = "TYPE";
-
-
-let heading_6 = document.createElement("th");
-row_1.appendChild(heading_6);
-heading_6.innerHTML = "GENDER";
-
-
-thead.appendChild(row_1);
-
-my_table.appendChild(table);
-
 let theOwlHause = [
   {
     id: 1,
@@ -125,31 +81,49 @@ let theOwlHause = [
   },
 ];
 
-theOwlHause.forEach(function(character){
-    let row = document.createElement("tr");
-    row.classList = "row";
+const attributes = ["id", "name", "status", "species", "type", "gender"];
 
-    let dataID  = document.createElement("td");
-    row.appendChild(dataID)
-    let dataName  = document.createElement("td");
-    row.appendChild(dataName)
-    let dataStatus  = document.createElement("td");
-    row.appendChild(dataStatus)
-    let dataSpecies  = document.createElement("td");
-    row.appendChild(dataSpecies)
-    let dataType  = document.createElement("td");
-    row.appendChild(dataType)
-    let dataGender  = document.createElement("td");
-    row.appendChild(dataGender)
-    
+function createTableHeader() {
+  const thead = document.createElement("thead");
+  const row = document.createElement("tr");
 
-    dataID.innerHTML = character.id;
-    dataName.innerHTML = character.name;
-    dataStatus.innerHTML = character.status;
-    dataSpecies.innerHTML = character.species;
-    dataType.innerHTML = character.type;
-    dataGender.innerHTML = character.gender;
-    
+  attributes.forEach((attribute) => {
+    const th = document.createElement("th");
+    th.innerHTML = attribute.toUpperCase();
+    row.appendChild(th);
+  });
+
+  thead.appendChild(row);
+  return thead;
+}
+
+function createCharacterRow(character) {
+  const row = document.createElement("tr");
+  row.classList.add("row");
+
+  attributes.forEach((attribute) => {
+    const td = document.createElement("td");
+    td.innerHTML = character[attribute];
+    row.appendChild(td);
+  });
+
+  return row;
+}
+
+function printTable(array) {
+  const myTable = document.getElementById("my_table");
+  const table = document.createElement("table");
+  const tbody = document.createElement("tbody");
+
+  table.appendChild(createTableHeader());
+
+  array.forEach((character) => {
+    const row = createCharacterRow(character);
     tbody.appendChild(row);
-});
+  });
 
+  table.appendChild(tbody);
+  myTable.appendChild(table);
+}
+
+printTable(theOwlHause);
