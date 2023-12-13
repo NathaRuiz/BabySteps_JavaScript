@@ -10,7 +10,7 @@ To develop sufficient knowledge for the use of javascript in dynamic web pages.
 ## Process 
 ### Tecnologies
 For this project I used the technologies:
- <img src="https://skillicons.dev/icons?i=html,css,js)](https://skillicons.dev"/>
+ <img src="https://skillicons.dev/icons?i=html,css,js,)](https://skillicons.dev"/>
 
 ## Installations Steps
 1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository.
