@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,30 @@
     <link rel="stylesheet" href="/config/styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
+
 <body id="index">
     <header id="index_header">
         <h1>Baby Steps JavaScript</h1>
     </header>
     <section id="index_content">
         <section class="exercises">
-            <button class="btn btn_slide_right"><a href="/src/assets/pages/variables.html">Variables</a></button>
-            <button class="btn btn_slide_right"><a href="/src/assets/pages/functions.html">Funtions</a></button>
-            <button class="btn btn_slide_right"><a href="/src/assets/pages/objects.html">Objects</a></button>
-            <button class="btn btn_slide_right"><a href="/src/assets/pages/arrays.html">Arrays</a></button>
+            <a href="/src/assets/pages/variables.html" class="btn btn_slide_right">Variables</a>
+            <a href="/src/assets/pages/functions.html" class="btn btn_slide_right">Funtions</a>
+            <a href="/src/assets/pages/objects.html" class="btn btn_slide_right">Objects</a>
+            <a href="/src/assets/pages/arrays.html" class="btn btn_slide_right">Arrays</a>
+            <a href="/src/assets/pages/form.html" class="btn btn_slide_right">Form</a>
+            <a href="/src/assets/pages/table.html" class="btn btn_slide_right">Table</a>
         </section>
         <div>
-            <button id="btn_welcome" onclick="alert('Welcome to my first exercises in JavaScript :D!!');">
+            <button id="btn_welcome">
                 Welcome
                 <i class="fa fa-hand-peace" aria-hidden="true"></i>
-            </button> 
+            </button>
         </div>
     </section>
+
+    <script src="src/assets/js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

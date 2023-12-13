@@ -4,6 +4,7 @@
     width:100%;
     height:100vh;
     background: linear-gradient(150deg, var(--dark-yellow), var(--yellow),var(--light-yellow) , var(--yellow),var(--dark-yellow) );
+    overflow: hidden;
 }
 
 #index_header{
@@ -22,31 +23,38 @@
 }
 
 .exercises{
-    width: 80%;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .btn{
+  margin: 20px;
+  font-style: none;
+  color: #000000;
   background-color:var(--orange);  
   border: 2px solid rgb(0, 0, 0);
-  border-radius: 0px;
+  border-radius: 10px;
+  width: 70px;
   padding: 18px 36px;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-align: center;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 var(--orange);
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
-.btn > a{
-    color: white;
-}
 .btn_slide_right:hover {
+    color: white;
     box-shadow: inset 400px 0 0 0 #000000;
+    border:  2px solid var(--orange);
+    scale: 1.1;
+    font-weight: 900;
 }
 
 #btn_welcome{
@@ -64,4 +72,5 @@
     scale:1.2;
     border: 2px solid var(--orange);
     box-shadow: none ;
+    font-weight: 900;
 }

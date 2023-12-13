@@ -4,12 +4,7 @@
     background: var(--variables-bg);
 }
 
-header{
-    font-size: 20px;
-}
-header > h1{
-    text-align: center;
-}
+
 .title{
 margin-bottom: 10px;
 }

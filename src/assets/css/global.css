@@ -17,11 +17,22 @@
 }
 
 .back{
-  margin: 5px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  margin-left: 10px;
+  font-size: 19px;
+  padding:7px 10px;
+  border-radius: 50%;
+  border: 1px solid black;
   background-color: var(--yellow);
+  color: black;
+}
+
+header{
+  padding-top:12px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+header > h1{
+  text-align: center;
 }
 
 .main_content{
@@ -38,6 +49,7 @@
   padding: 25px;
   width: 20%;
   border-radius: 10px;
+  box-shadow: 5px 5px 20px; 
 }
 
 .ul_class{
